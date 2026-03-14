@@ -5,16 +5,16 @@
 
 ---
 
-## 🧰 Runtime 核心装备
+## 🔬 透明可观测的 Runtime 链路
 
-本项目内部实现了一个功能完善的 Agent Runtime 引擎，它为你“装备”了以下核心能力：
+本项目内部实现了一个完整的 Agent Runtime 引擎，**最重要的是，它的每一个处理环节都在前端 Trace 视图中对你完全透明可见**：
 
-- **NLU 意图识别 (Intent Recognition)**：支持 Embedding 相似度匹配与 LLM 深度理解双引擎，并附带强大的 Slot (实体) 提取能力。
-- **Guardrails 安全防护 (Security)**：提供输入指令注入防护与输出结果的安全校验，支持 Regex 正则与 LLM-as-Judge 双重判定。
-- **RAG 知识检索 (Retrieval-Augmented Generation)**：内置基于 Qdrant 的轻量级本地向量数据库，实现了商品数据与通用知识的 Hybrid 分数融合检索。
-- **Memory 记忆系统 (Four-Tier Memory)**：实现了包含 工作记忆 (Working)、情节记忆 (Episodic)、用户画像 (Profile) 和 长期总结 (Long-term) 的四层专业架构。
-- **Hybrid 路由调度引擎 (ReAct + Workflow)**：不仅支持高自由度的 Agent ReAct 探索模式，也支持稳定可控的 Workflow 代码状态机流水线模式。
-- **Trace 可视化系统 (Observability)**：全链路透明无死角，实时打印 LLM Token 消耗、执行耗时、Prompt 组装详情以及工具调用链。
+- **NLU 意图识别**：你可以直接“看”到用户的输入是如何被分类为特定意图的，以及提取了哪些具体的 Slot (实体) 参数。
+- **Guardrails 安全防护**：你可以直接“看”到安全护栏拦截注入攻击的全过程，审查被拦截的具体原因和耗时。
+- **RAG 知识检索**：你可以直接“看”到系统从向量库中召回了哪些商品或知识片段，以及具体的排序打分。
+- **Memory 记忆系统**：你可以直接“看”到 Agent 会话过程中，工作记忆、情节记忆和用户画像是怎么实时更新的。
+- **Hybrid 路由调度**：你可以直观对比 Workflow 模式（按部就班的代码流水线）与 ReAct 模式（大模型自主的 Thought/Action 循环）在执行轨迹上的巨大差异。
+- **Prompt 组装揭秘**：拒绝黑盒！你可以直接点开查看最终喂给大模型的完整 Prompt 到底是由多少个真实模块（基础设定 + 知识 + 记忆）拼接而成的。
 
 ---
 ## 🎯 这个项目能帮你理解什么？
