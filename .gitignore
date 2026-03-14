@@ -1,0 +1,17 @@
+# Environments
+.env
+
+# Virtual Environment
+venv/
+env/
+.venv/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Mac
+.DS_Store
