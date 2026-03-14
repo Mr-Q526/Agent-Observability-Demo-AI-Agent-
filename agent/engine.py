@@ -35,6 +35,8 @@ from agent.logger import (
 )
 
 # ========== 配置 ==========
+import os
+
 # --- LLM Client 初始化 ---
 DEEPSEEK_API_KEY = os.environ.get("DEEPSEEK_API_KEY")
 if not DEEPSEEK_API_KEY:
